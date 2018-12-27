@@ -39,6 +39,59 @@ public class GT_Loader_Machines
 		// MetaTileEntity ID Range: look at end of file
 		// GT 5.08.30
 
+// ===================================================================================================
+		// Hull
+		// ===================================================================================================
+		CustomItemList.Hull_UEV.set(new GT_MetaTileEntity_BasicHull(
+				11230, "hull.tier.10", "UEV Machine Hull",10,
+				GT_Loader_MetaTileEntities.imagination).getStackForm(1L));
+
+		GT_ModHandler.addCraftingRecipe(CustomItemList.Hull_UEV.get(1L),
+				bitsd,
+				new Object[]{"PHP", "WMW",
+						'M', CustomItemList.Casing_UEV,
+						'W', OrePrefixes.cableGt08.get(Materials.Draconium),
+						'H', OrePrefixes.plate.get(Materials.Bedrockium),
+						'P', OrePrefixes.plateDouble.get(Materials.Polybenzimidazole)});
+
+		CustomItemList.Hull_UIV.set(new GT_MetaTileEntity_BasicHull(
+				11231, "hull.tier.11", "UIV Machine Hull",11,
+				GT_Loader_MetaTileEntities.imagination).getStackForm(1L));
+
+		GT_ModHandler.addCraftingRecipe(CustomItemList.Hull_UIV.get(1L),
+				bitsd,
+				new Object[]{"PHP", "WMW",
+						'M', CustomItemList.Casing_UIV,
+						'W', OrePrefixes.cableGt08.get(Materials.NetherStar),
+						'H', OrePrefixes.plate.get(Materials.BlackPlutonium),
+						'P', OrePrefixes.plateDouble.get(Materials.Polybenzimidazole)});
+
+		CustomItemList.Hull_UMV.set(new GT_MetaTileEntity_BasicHull(
+				11232, "hull.tier.12", "UMV Machine Hull",12,
+				GT_Loader_MetaTileEntities.imagination).getStackForm(1L));
+
+		GT_ModHandler.addCraftingRecipe(CustomItemList.Hull_UMV.get(1L),
+				bitsd,
+				new Object[]{"PHP", "WMW",
+						'M', CustomItemList.Casing_UMV,
+						'W', OrePrefixes.wireGt12.get(Materials.Quantium),
+						'H', OrePrefixes.plate.get(Materials.Draconium),
+						'P', OrePrefixes.plateDouble.get(Materials.Polybenzimidazole)});
+
+		CustomItemList.Hull_UXV.set(new GT_MetaTileEntity_BasicHull(
+				11233, "hull.tier.13", "UXV Machine Hull",13,
+				GT_Loader_MetaTileEntities.imagination).getStackForm(1L));
+
+		CustomItemList.Hull_OPV.set(new GT_MetaTileEntity_BasicHull(
+				11234, "hull.tier.14", "OPV Machine Hull",14,
+				GT_Loader_MetaTileEntities.imagination).getStackForm(1L));
+
+		CustomItemList.Hull_MAXV.set(new GT_MetaTileEntity_BasicHull(
+				11235, "hull.tier.15", "MAX Machine Hull",15,
+				GT_Loader_MetaTileEntities.imagination).getStackForm(1L));
+
+		//TODO:recipes
+
 
 		// ===================================================================================================
 		// Plasma Generators
@@ -199,7 +252,7 @@ public class GT_Loader_Machines
 		// ===================================================================================================
 		CustomItemList.AssemblingMachineLuV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				10780, "basicmachine.assembler.tier.06", "Elite Assembling Machine", 6, "Avengers, Assemble!",
-				GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 6, 1, 24000, 0, 1, "Assembler.png",
+				GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 96000, 0, 1, "Assembler2.png",
 				"", false, false, 0, "ASSEMBLER",
 				new Object[] { "ACA", "VMV", "WCW",
 						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL,
@@ -210,7 +263,7 @@ public class GT_Loader_Machines
 
 		CustomItemList.AssemblingMachineZPM.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				10781, "basicmachine.assembler.tier.07", "Elite Assembling Machine II", 7, "Avengers, Assemble!",
-				GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 6, 1, 32000, 0, 1, "Assembler.png",
+				GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 128000, 0, 1, "Assembler2.png",
 				"", false, false, 0, "ASSEMBLER",
 				new Object[] { "ACA", "VMV", "WCW",
 						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL,
@@ -221,7 +274,7 @@ public class GT_Loader_Machines
 
 		CustomItemList.AssemblingMachineUV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				10782, "basicmachine.assembler.tier.08", "Ultimate Assembly Constructor", 8, "Avengers, Assemble!",
-				GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 6, 1, 48000, 0, 1, "Assembler.png",
+				GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 160000, 0, 1, "Assembler2.png",
 				"", false, false, 0, "ASSEMBLER",
 				new Object[] { "ACA", "VMV", "WCW",
 						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL,
@@ -232,7 +285,7 @@ public class GT_Loader_Machines
 
 		CustomItemList.AssemblingMachineUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				10783, "basicmachine.assembler.tier.09", "Epic Assembly Constructor", 9, "Avengers, Assemble!",
-				GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 6, 1, 64000, 0, 1, "Assembler.png",
+				GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 192000, 0, 1, "Assembler2.png",
 				"", false, false, 0, "ASSEMBLER",
 				new Object[] { "ACA", "VMV", "WCW",
 						'M', ItemList.Hull_MAX,
@@ -243,17 +296,23 @@ public class GT_Loader_Machines
 
 		CustomItemList.AssemblingMachineUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				10784, "basicmachine.assembler.tier.10", "Epic Assembly Constructor II",10, "Avengers, Assemble!",
-				GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 6, 1, 16000, 0, 1, "Assembler.png",
-				"", false, false, 0, "ASSEMBLER",null).getStackForm(1L));
+				GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 224000, 0, 1, "Assembler2.png",
+				"", false, false, 0, "ASSEMBLER",
+				new Object[] { "ACA", "VMV", "WCW",
+						'M', CustomItemList.Hull_UEV,
+						'V', ItemList.Conveyor_Module_UEV,
+						'A', ItemList.Robot_Arm_UEV,
+						'C', OrePrefixes.circuit.get(Materials.Bio),
+						'W', OrePrefixes.cableGt01.get(Materials.Draconium)}).getStackForm(1L));
 
 		CustomItemList.AssemblingMachineUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				10785, "basicmachine.assembler.tier.11", "Epic Assembly Constructor III",11, "Avengers, Assemble!",
-				GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 6, 1, 16000, 0, 1, "Assembler.png",
+				GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 224000, 0, 1, "Assembler2.png",
 				"", false, false, 0, "ASSEMBLER",null).getStackForm(1L));
 
 		CustomItemList.AssemblingMachineUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				10786, "basicmachine.assembler.tier.12", "Epic Assembly Constructor IV",12, "Avengers, Assemble!",
-				GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 6, 1, 16000, 0, 1, "Assembler.png",
+				GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 224000, 0, 1, "Assembler2.png",
 				"", false, false, 0, "ASSEMBLER",null).getStackForm(1L));
 
 		//AssemblingMachineLuV
@@ -998,7 +1057,11 @@ public class GT_Loader_Machines
 		CustomItemList.FormingPressUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				10904, "basicmachine.press.tier.10", "Epic Surface Shifter II",10, "Imprinting Images into things",
 				GT_Recipe.GT_Recipe_Map.sPressRecipes, 2, 1, 0, 0, 1, "Press.png",
-				GregTech_API.sSoundList.get(203), false, false, 0, "PRESS",null).getStackForm(1L));
+				GregTech_API.sSoundList.get(203), false, false, 0, "PRESS",			new Object[] { "WPW", "CMC", "WPW",
+				'M', CustomItemList.Hull_UEV,
+				'P', ItemList.Electric_Piston_UEV,
+				'C', OrePrefixes.circuit.get(Materials.Bio),
+				'W', OrePrefixes.cableGt01.get(Materials.Draconium)}).getStackForm(1L));
 
 		CustomItemList.FormingPressUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				10905, "basicmachine.press.tier.11", "Epic Surface Shifter III",11, "Imprinting Images into things",
@@ -1960,7 +2023,7 @@ public class GT_Loader_Machines
 		// ===================================================================================================
 		CustomItemList.ArcFurnaceLuV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11070, "basicmachine.arcfurnace.tier.06", "Elite Arc Furnace", 6, "",
-				GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 1, 128000, 0, 1, "ArcFurnace.png",
+				GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 4, 128000, 0, 1, "ArcFurnace.png",
 				GregTech_API.sSoundList.get(202), false, false, 0, "ARC_FURNACE",
 				new Object[] { "WGW", "CMC", "PPP",
 						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL,
@@ -1971,7 +2034,7 @@ public class GT_Loader_Machines
 
 		CustomItemList.ArcFurnaceZPM.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11071, "basicmachine.arcfurnace.tier.07", "Elite Arc Furnace II", 7, "",
-				GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 1, 128000, 0, 1, "ArcFurnace.png",
+				GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 4, 128000, 0, 1, "ArcFurnace.png",
 				GregTech_API.sSoundList.get(202), false, false, 0, "ARC_FURNACE",
 				new Object[] { "WGW", "CMC", "PPP",
 						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL,
@@ -1982,7 +2045,7 @@ public class GT_Loader_Machines
 
 		CustomItemList.ArcFurnaceUV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11072, "basicmachine.arcfurnace.tier.08", "Ultimate Short Circuit Heater", 8, "",
-				GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 1, 128000, 0, 1, "ArcFurnace.png",
+				GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 4, 128000, 0, 1, "ArcFurnace.png",
 				GregTech_API.sSoundList.get(202), false, false, 0, "ARC_FURNACE",
 				new Object[] { "WGW", "CMC", "PPP",
 						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL,
@@ -1993,22 +2056,22 @@ public class GT_Loader_Machines
 
 		CustomItemList.ArcFurnaceUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11073, "basicmachine.arcfurnace.tier.09", "Epic Short Circuit Heater", 9, "",
-				GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 1, 128000, 0, 1, "ArcFurnace.png",
+				GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 4, 128000, 0, 1, "ArcFurnace.png",
 				GregTech_API.sSoundList.get(202), false, false, 0, "ARC_FURNACE",null).getStackForm(1L));
 
 		CustomItemList.ArcFurnaceUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11074, "basicmachine.arcfurnace.tier.10", "Epic Short Circuit Heater II",10, "",
-				GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 1, 128000, 0, 1, "ArcFurnace.png",
+				GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 4, 128000, 0, 1, "ArcFurnace.png",
 				GregTech_API.sSoundList.get(202), false, false, 0, "ARC_FURNACE",null).getStackForm(1L));
 
 		CustomItemList.ArcFurnaceUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11075, "basicmachine.arcfurnace.tier.11", "Epic Short Circuit Heater III",11, "",
-				GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 1, 128000, 0, 1, "ArcFurnace.png",
+				GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 4, 128000, 0, 1, "ArcFurnace.png",
 				GregTech_API.sSoundList.get(202), false, false, 0, "ARC_FURNACE",null).getStackForm(1L));
 
 		CustomItemList.ArcFurnaceUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11076, "basicmachine.arcfurnace.tier.12", "Epic Short Circuit Heater IV",12, "",
-				GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 1, 128000, 0, 1, "ArcFurnace.png",
+				GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 4, 128000, 0, 1, "ArcFurnace.png",
 				GregTech_API.sSoundList.get(202), false, false, 0, "ARC_FURNACE",null).getStackForm(1L));
 
 		//ArcFurnaceLuV
@@ -2061,17 +2124,22 @@ public class GT_Loader_Machines
 
 		CustomItemList.CentrifugeUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11084, "basicmachine.centrifuge.tier.10", "Epic Molecular Tornado II",10, "Separating Molecules",
-				GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 64000, 0, 1, "Centrifuge.png",
-				"", false, false, 0, "CENTRIFUGE",null).getStackForm(1L));
+				GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 256000, 0, 1, "Centrifuge.png",
+				"", false, false, 0, "CENTRIFUGE",
+				new Object[] { "CEC", "WMW", "CEC",
+						'M', CustomItemList.Hull_UEV,
+						'E', ItemList.Electric_Motor_UEV,
+						'C', OrePrefixes.circuit.get(Materials.Bio),
+						'W', OrePrefixes.cableGt01.get(Materials.Draconium)}).getStackForm(1L));
 
 		CustomItemList.CentrifugeUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11085, "basicmachine.centrifuge.tier.11", "Epic Molecular Tornado III",11, "Separating Molecules",
-				GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 64000, 0, 1, "Centrifuge.png",
+				GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 512000, 0, 1, "Centrifuge.png",
 				"", false, false, 0, "CENTRIFUGE",null).getStackForm(1L));
 
 		CustomItemList.CentrifugeUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11086, "basicmachine.centrifuge.tier.12", "Epic Molecular Tornado IV",12, "Separating Molecules",
-				GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 64000, 0, 1, "Centrifuge.png",
+				GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 1024000, 0, 1, "Centrifuge.png",
 				"", false, false, 0, "CENTRIFUGE",null).getStackForm(1L));
 
 
@@ -2965,59 +3033,6 @@ public class GT_Loader_Machines
                         'C', OrePrefixes.circuit.get(Materials.Infinite),
                         'G', new ItemStack(Blocks.glass, 1, 32767)});
 
-		// ===================================================================================================
-		// Hull
-		// ===================================================================================================
-		CustomItemList.Hull_UEV.set(new GT_MetaTileEntity_BasicHull(
-				11230, "hull.tier.10", "UEV Machine Hull",10,
-				GT_Loader_MetaTileEntities.imagination).getStackForm(1L));
-
-		GT_ModHandler.addCraftingRecipe(CustomItemList.Hull_UEV.get(1L),
-				bitsd,
-				new Object[]{"PHP", "WMW",
-						'M', CustomItemList.Casing_UEV,
-						'W', OrePrefixes.cableGt08.get(Materials.Draconium),
-						'H', OrePrefixes.plate.get(Materials.Bedrockium),
-						'P', OrePrefixes.plateDouble.get(Materials.Polybenzimidazole)});
-
-		CustomItemList.Hull_UIV.set(new GT_MetaTileEntity_BasicHull(
-				11231, "hull.tier.11", "UIV Machine Hull",11,
-				GT_Loader_MetaTileEntities.imagination).getStackForm(1L));
-
-		GT_ModHandler.addCraftingRecipe(CustomItemList.Hull_UIV.get(1L),
-				bitsd,
-				new Object[]{"PHP", "WMW",
-						'M', CustomItemList.Casing_UIV,
-						'W', OrePrefixes.cableGt08.get(Materials.NetherStar),
-						'H', OrePrefixes.plate.get(Materials.BlackPlutonium),
-						'P', OrePrefixes.plateDouble.get(Materials.Polybenzimidazole)});
-
-		CustomItemList.Hull_UMV.set(new GT_MetaTileEntity_BasicHull(
-				11232, "hull.tier.12", "UMV Machine Hull",12,
-				GT_Loader_MetaTileEntities.imagination).getStackForm(1L));
-
-		GT_ModHandler.addCraftingRecipe(CustomItemList.Hull_UMV.get(1L),
-				bitsd,
-				new Object[]{"PHP", "WMW",
-						'M', CustomItemList.Casing_UMV,
-						'W', OrePrefixes.wireGt12.get(Materials.Quantium),
-						'H', OrePrefixes.plate.get(Materials.Draconium),
-						'P', OrePrefixes.plateDouble.get(Materials.Polybenzimidazole)});
-
-		CustomItemList.Hull_UXV.set(new GT_MetaTileEntity_BasicHull(
-				11233, "hull.tier.13", "UXV Machine Hull",13,
-				GT_Loader_MetaTileEntities.imagination).getStackForm(1L));
-
-		CustomItemList.Hull_OPV.set(new GT_MetaTileEntity_BasicHull(
-				11234, "hull.tier.14", "OPV Machine Hull",14,
-				GT_Loader_MetaTileEntities.imagination).getStackForm(1L));
-
-		CustomItemList.Hull_MAXV.set(new GT_MetaTileEntity_BasicHull(
-				11235, "hull.tier.15", "MAX Machine Hull",15,
-				GT_Loader_MetaTileEntities.imagination).getStackForm(1L));
-
-		//TODO:recipes
-
 
 		// ===================================================================================================
 		// Transformer
@@ -3052,7 +3067,7 @@ public class GT_Loader_Machines
 						'M', ItemList.Hull_MAX,
 						'C', OrePrefixes.wireGt01.get(Materials.Draconium),
 						'B', OrePrefixes.wireGt04.get(Materials.SuperconductorUHV),
-						'K', ItemList.Circuit_Chip_UHPIC});
+						'K', ItemList.Circuit_Chip_PPIC});
 
 		GT_ModHandler.addCraftingRecipe(CustomItemList.Transformer_UIV_UEV.get(1L),
 				bitsd,
@@ -3060,7 +3075,7 @@ public class GT_Loader_Machines
 						'M', CustomItemList.Hull_UEV,
 						'C', OrePrefixes.wireGt01.get(Materials.NetherStar),
 						'B', OrePrefixes.wireGt04.get(Materials.Draconium),
-						'K', ItemList.Circuit_Chip_UHPIC});
+						'K', ItemList.Circuit_Chip_QPIC});
 
 		GT_ModHandler.addCraftingRecipe(CustomItemList.Transformer_UMV_UIV.get(1L),
 				bitsd,
@@ -3068,7 +3083,7 @@ public class GT_Loader_Machines
 						'M', CustomItemList.Hull_UIV,
 						'C', OrePrefixes.wireGt01.get(Materials.Quantium),
 						'B', OrePrefixes.wireGt04.get(Materials.NetherStar),
-						'K', ItemList.Circuit_Chip_UHPIC});
+						'K', ItemList.Circuit_Chip_QPIC});
 
 
 		//TODO:recipes

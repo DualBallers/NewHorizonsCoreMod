@@ -89,7 +89,7 @@ public enum CustomItemList implements IItemContainer
 	SteelBars, AluminiumBars, StainlessSteelBars, TungstenBars, TungstenSteelBars, IridiumBars, OsmiumBars, ChromeBars, TitaniumBars, NeutroniumBars,
 	RedstoneAlloyBars, ElectricalSteelBars, ConductiveIronBars, EnergeticAlloyBars, VibrantAlloyBars, PulsatingIronBars, SoulariumBars, EnderiumBaseBars, EnderiumBars,
 	PistonBlock, PistonPlate,ReinforcedGlassLense, ReinforcedGlassPLate,
-    StainlessSteelItemCasing, IridiumAlloyItemCasing, AluminiumItemCasing, ChromeItemCasing, IridiumItemCasing, NeutroniumItemCasing, OsmiumItemCasing, TitaniumItemCasing, TungstenItemCasing, TungstenSteelItemCasing,
+    IridiumAlloyItemCasing,
 	NagaScaleChip, NagaScaleFragment, LichBoneChip, LichBoneFragment, LichBone, FieryBloodDrop, CarminiteChip, CarminiteFragment, SnowQueenBloodDrop, SnowQueenBlood, NetherStarFragment,
 	AdvancedBoard, AdvancedProcessorBoard, NanoBoard, NanoProcessorBoard, QuantumBoard, QuantumProcessorBoard, EngravedQuantumChip, HighEnergyCircuitParts, HighEnergyFlowCircuit, NanoCircuit, PikoCircuit, QuantumCircuit,
     EngravedDiamondCrystalChip, EngravedEnergyChip,
@@ -128,11 +128,13 @@ public enum CustomItemList implements IItemContainer
 	MedalDerp,MedalGTExplosion,MedalBuilder,MedalEngineer,MedalWarp,
 	MaceratedPlantmass, BedrockiumPlate, EngineCore, AlumiteDust,
 	nameRemover, TwilightCrystal, UnfiredClayBrick, WoodenBrickForm, UnfiredSearedBrick, UnfiredCokeOvenBrick, UnfiredSlimeSoulBrick, RawLapotronCrystal, LapotronDust, SandDust,
-	AluminiumIronPlate, ReinforcedAluminiumIronPlate, IrradiantReinforcedAluminiumPlate, IrradiantReinforcedTitaniumPlate, IrradiantReinforcedTungstenPlate, IrradiantReinforcedTungstenSteelPlate, IrradiantReinforcedChromePlate, IrradiantReinforcedNaquadriaPlate, IrradiantReinforcedNeutroniumPlate,
+	AluminiumIronPlate, ReinforcedAluminiumIronPlate, IrradiantReinforcedAluminiumPlate, IrradiantReinforcedTitaniumPlate, IrradiantReinforcedTungstenPlate, IrradiantReinforcedTungstenSteelPlate, IrradiantReinforcedChromePlate, IrradiantReinforcedNaquadriaPlate, IrradiantReinforcedNeutroniumPlate, IrradiantReinforcedBedrockiumPlate,
 	QuantumCrystal, MysteriousCrystalLens, MysteriousCrystalGemFlawless, MysteriousCrystalGemExquisite,
 	PrimordialPearlFragment, SandStoneRod,
 	TheBigEgg, MutatedEgg, DraconiumEgg, EnderEgg,
-	ChargedCertusQuartzDust;
+	ChargedCertusQuartzDust, RawNeutronium,
+	RawPicoWafer, PicoWafer,
+	StargateFramePart, StargateChevron, StargateShieldingFoil, StargateCrystalDust, TCetiESeaweedExtract;
 
 
 	private ItemStack mStack;
