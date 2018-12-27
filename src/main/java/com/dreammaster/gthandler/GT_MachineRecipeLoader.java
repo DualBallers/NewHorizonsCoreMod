@@ -1377,16 +1377,6 @@ public class GT_MachineRecipeLoader implements Runnable{
 
         GT_Values.RA.addMixerRecipe(new ItemStack(Blocks.dirt, 1, 0), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Utility.getIntegratedCircuit(4), Materials.Water.getFluid(1000L), GT_Values.NF, GT_ModHandler.getModItem("BiomesOPlenty", "mudball", 4L, 0), 50, 8);
 
-        GT_Values.RA.addMixerRecipe(new ItemStack(Blocks.dirt, 1, 0), GT_ModHandler.getModItem("gregtech", "gt.metaitem.01", 16L, 2809), new ItemStack(Blocks.sand, 4, 0),GT_Values.NI, Materials.Water.getFluid(1000L), GT_Values.NF, ItemList.IC2_Fertilizer.get(4, new Object[0]), 100, 30);
-
-        GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Lead, 4L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Antimony, 1L), GT_Values.NI, GT_Utility.getIntegratedCircuit(1), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.BatteryAlloy, 5L), 100, 4);
-        GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Tin, 9L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Antimony, 1L), GT_Values.NI, GT_Utility.getIntegratedCircuit(1), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.SolderingAlloy, 10L), 100, 8);
-        GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Magnesium, 2L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Aluminium, 1L), GT_Values.NI, GT_Utility.getIntegratedCircuit(1), GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Magnalium, 3L), 100, 4);
-
-        GT_Values.RA.addMixerRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Neutronium, 16L), GT_Values.NI, GT_Utility.getIntegratedCircuit(1), GT_Values.NI, Materials.Helium.getPlasma(2304L), GT_Values.NF, CustomItemList.RawNeutronium.get(16L), 3600, 500000);
-
-        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Sugar, 1L), GT_OreDictUnificator.get(OrePrefixes.cell, Materials.Fuel, 1L), GT_OreDictUnificator.get(OrePrefixes.cell, Materials.SulfuricAcid, 1L), GT_OreDictUnificator.get(OrePrefixes.cell, Materials.Acetone, 1L), GT_ModHandler.getModItem("harvestcraft", "pepperoniItem", 1L, 0), GT_OreDictUnificator.get(OrePrefixes.dye, Materials.Red, 1L), GT_Utility.getIntegratedCircuit(1)}, FluidRegistry.getFluidStack("mead", 1000), GT_ModHandler.getModItem("OpenComputers", "item", 1L, 18), 12000, 480);
-
         GT_Values.RA.addVacuumFreezerRecipe(CustomItemList.GlowingMarshmallow.get(1L), CustomItemList.Marshmallow.get(1L), 48000, 1920);
 
         GT_Values.RA.addVacuumFreezerRecipe(GT_OreDictUnificator.get(OrePrefixes.ingotHot, Materials.Neutronium, 1L), GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.Neutronium, 1L), 1250, 7860);
